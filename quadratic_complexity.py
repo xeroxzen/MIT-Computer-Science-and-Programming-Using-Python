@@ -1,4 +1,11 @@
+"""
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
 # Algorithm complexity
+
 
 def isSubset(L1, L2):
     for e1 in L1:

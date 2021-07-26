@@ -1,3 +1,9 @@
+"""
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
 "Eric", "Khumalo", 80
 "Phumzile", "Moyo", 100
 "Nandipa", "Siluma", 90

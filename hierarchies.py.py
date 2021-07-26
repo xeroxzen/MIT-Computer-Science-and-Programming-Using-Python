@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Mon Jul 26 17:23:16 2021
 
-Andile Jaden Mbele
+@author: Andile Jaden Mbele
 """
 
 import random

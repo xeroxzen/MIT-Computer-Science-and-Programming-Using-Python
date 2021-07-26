@@ -1,3 +1,9 @@
+"""
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
 data = []
 
 file_name = input('Provide a name of a file of data ')

@@ -1,3 +1,9 @@
+"""
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
 def search(L, e):
 	"""
 	1. must only look until reach a number greater than e

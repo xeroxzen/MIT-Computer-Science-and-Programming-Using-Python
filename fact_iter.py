@@ -1,3 +1,9 @@
+"""
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
 def fact_iter(n):
 	"""Assumes n is an int >= 0
 

@@ -1,4 +1,10 @@
 """
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
+"""
 Complexity of the iterative fibonacci
 1. Best case: O(1)
 2. Worst case: O(1) + O(n) + O(1) => O(n)

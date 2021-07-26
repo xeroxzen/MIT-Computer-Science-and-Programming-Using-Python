@@ -1,4 +1,10 @@
 """
+Created on Mon Jul 26 17:23:16 2021
+
+@author: Andile Jaden Mbele
+"""
+
+"""
 Exponential Complexity
 
 1. it's prevalent to think about size of smaller
@@ -6,16 +12,19 @@ Exponential Complexity
 3. To solve this we need something like pow(2, n-1) + pow(2, n-2) + ... + pow(2, 0)
 """
 
+
 def gen_subsets(L):
-	res = [] # empty list
-	if len(L) == 0:
-		return [[]] # list of an empty list
-	smaller = gen_subsets(L[:-1]) # recursive return all subsets without last element
+    res = []  # empty list
+    if len(L) == 0:
+        return [[]]  # list of an empty list
+    # recursive return all subsets without last element
+    smaller = gen_subsets(L[:-1])
 
-	extra = L[-1:] # create a list of just the last element
-	new = [] # again, empty list
-	
-	for small in smaller:
-		new.append(small + extra) # for all smaller solutions, add one with last element
+    extra = L[-1:]  # create a list of just the last element
+    new = []  # again, empty list
 
-	return smaller + new
+    for small in smaller:
+        # for all smaller solutions, add one with last element
+        new.append(small + extra)
+
+    return smaller + new
