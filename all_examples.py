@@ -369,7 +369,13 @@ def avg(grades):
 
 def get_ratios(L1, L2):
     """Assumes: L1 and L2 are lists of equal length of numbers
-    Returns: a list containing L1[i]/L2[1] """
+    Returns: a list containing L1[i]/L2[1]
+
+    >>> get_ratios([1, 2, 3, 4], [2, 4, 6, 8])
+    [0.5, 0.5, 0.5, 0.5]
+    >>> get_ratios([4, 9, 10, 7], [3, 2, 9, 11])
+    [1.3333333333333333, 4.5, 1.1111111111111112, 0.6363636363636364]
+    """
 
     ratios = []
     for index in range(len(L1)):
