@@ -6,7 +6,7 @@ Created on Mon Jul 26 17:23:16 2021
 
 data = []
 
-file_name = input('Provide a name of a file of data ')
+file_name = input('Provide a name of a file of data: ')
 
 try:
     fh = open(file_name, 'r')
