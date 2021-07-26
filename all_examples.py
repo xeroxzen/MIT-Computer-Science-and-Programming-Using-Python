@@ -281,19 +281,6 @@ def my_sum(x):
         total += i
     return total
 
-def avg(grades):
-    """Assertions; an example of good defensive programming
-
-    >>> avg([68, 89, 96, 88, 75])
-    83.2
-    >>> avg([68, 50, 91, 80, 65])
-    70.8
-    >>> avg([49, 60, 81, 97, 55])
-    68.4
-    """
-    assert not len(grades) == 0, 'no grades data'
-    return sum(grades) / len(grades)
-
 def isPal(x):
     """
     >>> isPal(['a', 'b'])
@@ -339,3 +326,57 @@ def silly(n):
         print('Yes')
     else:
         print('No')
+
+def get_stats(class_list):
+    new_stats = []
+    for elmt in class_list:
+        new_stats.append([elmt[0], elmt[1], avg(elmt[1])])
+    return new_stats
+
+test_grades = [[['peter', 'parker'], [10.0, 5.0, 85.0]],
+                [['bruce', 'wayne'], [10.0, 8.0, 74.0]],
+                [['captain', 'america'], [8.0, 10.0, 96.0]],
+                [['deadpool'],[]]]
+
+# def avg(grades):
+#     """Assertions; an example of good defensive programming
+#
+#     >>> avg([68, 89, 96, 88, 75])
+#     83.2
+#     >>> avg([68, 50, 91, 80, 65])
+#     70.8
+#     >>> avg([49, 60, 81, 97, 55])
+#     68.4
+#     """
+#     assert not len(grades) == 0, 'no grades data'
+#     return sum(grades) / len(grades)
+
+# def avg(grades):
+#     return sum(grades) / len(grades)
+
+# def avg(grades):
+#     try:
+#         return sum(grades) / len(grades)
+#     except ZeroDivisionError:
+#         print('no grades data')
+
+def avg(grades):
+    try:
+        return sum(grades) / len(grades)
+    except ZeroDivisionError:
+        print('no grades data')
+        return 0.0
+
+def get_ratios(L1, L2):
+    """Assumes: L1 and L2 are lists of equal length of numbers
+    Returns: a list containing L1[i]/L2[1] """
+
+    ratios = []
+    for index in range(len(L1)):
+        try:
+            ratios.append(L1[index] / float(L2[index]))
+        except ZeroDivisionError:
+            ratios.append(float('NaN')) #NaN = Not a Number
+        except:
+            raise ValueError('get_ratios called with bad args')
+    return ratios
