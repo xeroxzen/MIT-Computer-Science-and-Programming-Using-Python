@@ -4,6 +4,7 @@ Created on Mon Jul 26 17:23:16 2021
 @author: Andile Jaden Mbele
 """
 
+
 data = []
 
 file_name = input('Provide a name of a file of data: ')
@@ -12,6 +13,7 @@ try:
     fh = open(file_name, 'r')
 except IOError:
     print('cannot open', file_name)
+# we can include other assertions we may find relevant
 else:
     for new in fh:
         if new != '\n':
