@@ -242,7 +242,7 @@ def g(n):
 	"""assume n >= 0
 
     1. Computes n ** 2 very inefficiently
-    2. Whenk dealing with nested loops, look at the ranges
+    2. When k dealing with nested loops, look at the ranges
     3. Nested loops, each iterating n times
 
     >>> g(3)

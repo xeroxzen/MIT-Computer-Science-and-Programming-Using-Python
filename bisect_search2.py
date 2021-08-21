@@ -25,4 +25,4 @@ def bisect_search2(L, e):
         return bisect_search_helper_fn(L, e, 0, len(L) - 1)
 
 
-test_list = [1, 2, 3, 5, 7, 9, 18, 27]
+# test_list = [1, 2, 3, 5, 7, 9, 18, 27]
