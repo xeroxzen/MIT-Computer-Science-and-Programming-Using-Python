@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Mapuranga"
-    ]
+    ],
+    "python.formatting.provider": "black"
 }
