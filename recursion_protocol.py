@@ -5,13 +5,13 @@ Created on Wed Jul 28 05:22:44 2021
 @author: Xeroxzen
 """
 
-def compare(L1, L2):
-    if len(L1) == len(L2):
-        L1, L2 = L1, L2
-        return L1, L2
-    elif len(L1) > len(L2):
-        L1 = L2
-        L2 = L1
-        return L1, L2
+def compare(data_list_1, data_list_2):
+    if len(data_list_1) == len(data_list_2):
+        data_list_1, data_list_2 = data_list_1, data_list_2
+        return data_list_1, data_list_2
+    elif len(data_list_1) > len(data_list_2):
+        data_list_1 = data_list_2
+        data_list_2 = data_list_1
+        return data_list_1, data_list_2
     else:
-        return compare(L1, L2)
+        return compare(data_list_1, data_list_2)
