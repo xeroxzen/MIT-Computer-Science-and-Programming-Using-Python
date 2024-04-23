@@ -5,24 +5,24 @@ Created on Mon Jul 26 17:23:16 2021
 """
 
 
-def bisect_search2(L, e):
-    def bisect_search_helper_fn(L, e, low, high):
+def bisect_search2(data_list, e):
+    def bisect_search_helper_fn(data_list, e, low, high):
         if high == low:
-            return L[low] == e
+            return dat_list[low] == e
         mid = (low + high) // 2
-        if L[mid] == e:
+        if dat_list[mid] == e:
             return True
-        elif L[mid] > e:
+        elif data_list[mid] > e:
             if low == mid:  # nothing left to search for
                 return False
             else:
-                return bisect_search_helper_fn(L, e, low, mid - 1)
+                return bisect_search_helper_fn(data_list, e, low, mid - 1)
         else:
-            return bisect_search_helper_fn(L, e, mid + 1, high)
-    if len(L) == 0:
+            return bisect_search_helper_fn(data_list, e, mid + 1, high)
+    if len(data_list) == 0:
         return False
     else:
-        return bisect_search_helper_fn(L, e, 0, len(L) - 1)
+        return bisect_search_helper_fn(data_list, e, 0, len(L) - 1)
 
 
 # test_list = [1, 2, 3, 5, 7, 9, 18, 27]
