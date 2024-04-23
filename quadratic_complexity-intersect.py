@@ -5,17 +5,17 @@ Created on Mon Jul 26 17:23:16 2021
 """
 
 """
-1. first nested loop takes len(L1)*len(L2) steps
-2. second loop takes at most len(L1) steps
+1. first nested loop takes len(data_list_1)*len(data_list_2) steps
+2. second loop takes at most len(data_list_1) steps
 3. Latter term overwhelmed by form term
-4. O(len(L1)*len(L2))
+4. O(len(data_list_1)*len(data_list_2))
 """
 
 
-def intersect(L1, L2):
+def intersect(data_list_1, data_list_2):
     tmp = []
-    for e1 in L1:
-        for e2 in L2:
+    for e1 in data_list_1:
+        for e2 in data_list_2:
             if e1 == e2:
                 tmp.append(e1)
     res = []
