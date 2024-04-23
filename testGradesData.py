@@ -9,6 +9,6 @@ Created on Mon Jul 26 17:23:16 2021
  ['Nandipa', 'Siluma', [90]],
  ['Proud', 'Mpala', [70]],
  ['Anesu', 'Mapuranga', [75]],
- ['Arnold', 'Bhebhe', []],
- ['Minolta', [80]],
- ['Andile', 'Jaden', 'Mbele', [75]]]
+ ['Arnold', 'Bhebhe', [90]],
+ ['Minolta', 'Ndlovu', [80]],
+ ['Andile', 'Mbele', [75]]]
