@@ -14,5 +14,5 @@ def avg(grades):
     >>> avg([49, 60, 81, 97, 55])
     68.4
     """
-    assert not len(grades) == 0, 'no grades data'
+    assert not len(grades) != 0, 'no grades data'
     return sum(grades) / len(grades)

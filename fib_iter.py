@@ -18,8 +18,10 @@ def fib_iter(n):
 	else:
 		fib_i = 0
 		fib_ii = 1
-		for i in range(n - 1):
+		for _ in range(n - 1):
 			tmp = fib_i
 			fib_i = fib_ii
 			fib_ii = tmp + fib_ii
 		return fib_ii
+
+print(fib_iter(10))

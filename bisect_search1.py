@@ -17,6 +17,3 @@ def bisect_search1(data_list, e):
             return bisect_search1(data_list[:half], e)
         else:
             return bisect_search1(data_list[half:], e)
-
-
-test_list = [1, 2, 3, 5, 7, 9, 18, 27]

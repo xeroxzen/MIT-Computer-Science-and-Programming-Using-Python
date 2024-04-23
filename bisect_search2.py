@@ -23,6 +23,3 @@ def bisect_search2(data_list, e):
         return False
     else:
         return bisect_search_helper_fn(data_list, e, 0, len(L) - 1)
-
-
-# test_list = [1, 2, 3, 5, 7, 9, 18, 27]

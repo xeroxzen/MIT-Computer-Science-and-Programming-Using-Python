@@ -14,7 +14,6 @@ Exponential Complexity
 
 
 def gen_subsets(data_list):
-    res = []  # empty list
     if len(data_list) == 0:
         return [[]]  # list of an empty list
     # recursive return all subsets without last element
