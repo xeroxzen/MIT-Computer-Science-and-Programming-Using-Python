@@ -13,14 +13,14 @@ Exponential Complexity
 """
 
 
-def gen_subsets(L):
+def gen_subsets(data_list):
     res = []  # empty list
-    if len(L) == 0:
+    if len(data_list) == 0:
         return [[]]  # list of an empty list
     # recursive return all subsets without last element
-    smaller = gen_subsets(L[:-1])
+    smaller = gen_subsets(data_list[:-1])
 
-    extra = L[-1:]  # create a list of just the last element
+    extra = data_list[-1:]  # create a list of just the last element
     new = []  # again, empty list
 
     for small in smaller:
