@@ -1,14 +1,14 @@
-def bubble_sort(L):
+def bubble_sort(data_list):
 	swap = False
 	while not swap:
 		swap = True
-		for j in range(1, len(L)):
-			print(L)
-			if L[j-1] > L[j]:
+		for j in range(1, len(data_list)):
+			print(data_list)
+			if data_list[j-1] > data_list[j]:
 				swap = False
-				tmp = L[j]
-				L[j] = L[j-1]
-				L[j-1] = tmp
+				tmp = data_list[j]
+				data_list[j] = data_list[j-1]
+				data_list[j-1] = tmp
 
 test = [3, 9, 1, 8, 10, 5, 7, ]
 #End here
