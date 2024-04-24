@@ -20,6 +20,6 @@ def intersect(data_list_1, data_list_2):
                 tmp.append(e1)
     res = []
     for e in tmp:
-        if not(e in res):
+        if e not in res:
             res.append(e)
     return res

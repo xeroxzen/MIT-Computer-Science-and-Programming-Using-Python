@@ -14,6 +14,6 @@ def g(n):
 	"""assume n >= 0 """
 	x = 0
 	for _ in range(n):
-		for j in range(n):
+		for _ in range(n):
 			x += 1
 	return x

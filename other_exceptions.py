@@ -14,8 +14,8 @@ except ZeroDivisionError:
     print('You cannot divide by zero')
 except ValueError:
     print('Cannot str to int')
-except:
-    print('Something is very very wrong')
-print('Outside the try statement')
+except Exception as e:
+    print('Something went wrong')
+print('Outside of the try-except block')
 
 
